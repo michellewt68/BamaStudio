@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/Register.css">
+</head>
+<body>
+    <h1 align="center" class="style1"> CREATE ACCOUNT </h1>
+    <p align="center">==================================</p>
+    <i><p align="center"class="style2">Please fill in this form to create account</p></i>
+    <form action="index.html" method="post"id="form">
+        <label for="name"></label>
+        <input type="text" placeholder="Your Full Name" name="name"required><br><br>
+        
+        <label for="password"></label>
+        <input type="password" placeholder="Password" name="password"required ><br><br>
+       
+        <label for="gender">Gender :</label> <br>
+        <input type="radio" id="male" name="gender" value="male" required >
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required >
+        <label for="female">Female</label><br><br>
+        
+        <label for="country">Country :</label>  <br>
+        <select name="country"  required >
+            <option value=""></option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="China">China</option>
+            <option value="Korea">Korea</option>
+            <option value="Thailand">Thailand</option>
+        </select> <br><br>
+
+        <label for="address">Address :</label><br>
+        <textarea name="address" id="" cols="30" rows="5"placeholder="Enter your address" required ></textarea><br><br>
+        
+        <label for="dob">Date of Birth :</label><br>
+        <input type="date"id="dob"name="dob" required ><br><br>
+
+        <input type="checkbox" required > I agree all statements in <a href="#">Terms & Privacy</a>. <br><br>
+
+        <button type="submit" id="signup" align="center">Sign Up</button>
+    </form>
+
+</body>
+</html>
